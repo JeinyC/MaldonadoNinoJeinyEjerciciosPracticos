@@ -25,11 +25,5 @@ public class Main {
         System.out.println(" - Sin parametros - ");
         System.out.println(Electo);
         //Imprime el objeto vacio
-
-
-
-
-
-
     }
 }

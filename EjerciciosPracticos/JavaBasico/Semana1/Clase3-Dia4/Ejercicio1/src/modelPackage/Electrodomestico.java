@@ -2,11 +2,11 @@ package modelPackage;
 
 public class Electrodomestico {
 
-    int cod;
-    String marca;
-    int modelo;
-    int consumo;
-    String color;
+    private int cod;
+    private String marca;
+    private int modelo;
+    private int consumo;
+    private String color;
 
     public Electrodomestico() {
 
