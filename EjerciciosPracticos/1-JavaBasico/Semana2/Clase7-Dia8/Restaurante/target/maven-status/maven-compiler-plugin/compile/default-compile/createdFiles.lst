@@ -1,0 +1,9 @@
+com\mycompany\restaurante\models\Platillos.class
+com\mycompany\restaurante\persistence\Platillo.class
+com\mycompany\restaurante\persistence\exceptions\NonexistentEntityException.class
+com\mycompany\restaurante\persistence\exceptions\PreexistingEntityException.class
+com\mycompany\restaurante\persistence\exceptions\IllegalOrphanException.class
+com\mycompany\restaurante\models\Platillos_.class
+com\mycompany\restaurante\persistence\PlatillosJpaController.class
+com\mycompany\restaurante\Restaurante.class
+com\mycompany\restaurante\persistence\ControladoraPersistencia.class
