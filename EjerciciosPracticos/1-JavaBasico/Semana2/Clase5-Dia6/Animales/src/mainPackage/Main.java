@@ -12,7 +12,7 @@ public class Main {
         Mamifero mamifero = new Mamifero(1, "Bonnie", 1, "dpc", "kitten", 4, "OVH", "calico","casa");
         Ave ave = new Ave();
 
-        Animal animal = mamifero;
+
 
         //Se puede acceder a estos metodos ya que son publicos
         reptil.saludar();
@@ -20,6 +20,8 @@ public class Main {
         ave.saludar();
 
         //se le asigno mamifero a animal.
+        Animal animal;
+        animal = mamifero;
         animal.saludar();
 
     }
