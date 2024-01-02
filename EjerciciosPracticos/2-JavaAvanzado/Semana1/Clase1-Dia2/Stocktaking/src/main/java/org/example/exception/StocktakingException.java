@@ -1,7 +1,5 @@
 package org.example.exception;
 
-import org.example.model.Product;
-
 public class StocktakingException extends Exception {
     public StocktakingException(String message) {
         super(message);

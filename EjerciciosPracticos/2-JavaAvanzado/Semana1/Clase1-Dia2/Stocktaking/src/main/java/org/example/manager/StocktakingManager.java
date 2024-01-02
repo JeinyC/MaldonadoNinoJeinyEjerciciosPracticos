@@ -1,6 +1,7 @@
 package org.example.manager;
 
 import org.example.exception.StocktakingException;
+import org.example.model.Product;
 
 import java.util.Scanner;
 
@@ -11,31 +12,22 @@ public class StocktakingManager {
     public void addProduct() {
 
         Scanner scanner = new Scanner(System.in);
+        Product product = new Product();
 
-        boolean flag = true;
-
-
-        while (flag) {
             try {
                 System.out.println("Enter product details:");
                 System.out.print("Name: ");
-                String name = scanner.nextLine();
+                product.setName(scanner.nextLine());
+
 
                 System.out.print("Price: ");
-                double price = Double.parseDouble(scanner.nextLine());
+                product.setPrice(scanner.nextDouble());
 
                 System.out.print("Quantity: ");
-                int quantity = Integer.parseInt(scanner.nextLine());
+               product.setQuantity(scanner.nextInt());
 
-                stocktakingException.validateData(name, price, quantity);
+                stocktakingException.validateData(product.getName(), product.getPrice(), product.getQuantity());
                 System.out.println("Product added successfully!");
-
-
-                System.out.print("Do you want to add another product? (y/n): ");
-                String choice = scanner.nextLine().toLowerCase();
-                if (choice.equalsIgnoreCase("n")){
-                    flag = false;
-                }
 
             }catch (StocktakingException e){
                 System.err.println(e.getMessage());
@@ -43,4 +35,4 @@ public class StocktakingManager {
         }
     }
 
-}
+
