@@ -1,20 +1,15 @@
-package org.example;
+package org.example.model;
 
 public class Call {
-    private String clientName;
-    private String clientQuery;
-    private String clientInfo;
+    private final String clientName;
+    private final String clientQuery;
+    private final String clientInfo;
 
     public Call(String clientName, String clientQuery, String clientInfo) {
         this.clientName = clientName;
         this.clientQuery = clientQuery;
         this.clientInfo = clientInfo;
     }
-
-    public Call() {
-
-    }
-
     @Override
     public String toString() {
         return "Call{" +

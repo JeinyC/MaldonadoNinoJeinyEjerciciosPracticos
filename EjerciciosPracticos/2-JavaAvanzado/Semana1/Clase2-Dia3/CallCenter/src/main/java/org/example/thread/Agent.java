@@ -1,4 +1,6 @@
-package org.example;
+package org.example.thread;
+
+import org.example.model.Call;
 
 public class Agent extends Thread {
     private Call call;
