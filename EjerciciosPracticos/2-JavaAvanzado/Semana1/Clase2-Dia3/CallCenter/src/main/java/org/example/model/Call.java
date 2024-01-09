@@ -10,6 +10,19 @@ public class Call {
         this.clientQuery = clientQuery;
         this.clientInfo = clientInfo;
     }
+
+    public String getClientName() {
+        return clientName;
+    }
+
+    public String getClientQuery() {
+        return clientQuery;
+    }
+
+    public String getClientInfo() {
+        return clientInfo;
+    }
+
     @Override
     public String toString() {
         return "Call{" +
