@@ -2,7 +2,7 @@ package org.example.model;
 
 import java.time.LocalDate;
 
-public class Agenda {
+public class Event {
 
     /*Imagina que estás construyendo una aplicación para gestionar eventos en una agenda.
      Cada evento tiene un nombre, una fecha y una categoría (por ejemplo, "Reunión", "Conferencia", "Taller"). */
@@ -11,7 +11,7 @@ public class Agenda {
     private LocalDate date;
     private String category;
 
-    public Agenda(String name, LocalDate date, String category) {
+    public Event(String name, LocalDate date, String category) {
         this.name = name;
         this.date = date;
         this.category = category;

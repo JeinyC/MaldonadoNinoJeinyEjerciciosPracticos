@@ -20,7 +20,7 @@ public class CarDealerManager {
             carInventory.addCar(car);
         }
 
-        double totalPrice = carInventory.calculateTotalPrice(carInventory.getCars());
+        double totalPrice = carInventory.calculateTotalPrice();
         System.out.println("Total price from the inventory : " + totalPrice);
 
         List<Car> toyotaCars = carInventory.searchByBrand("Toyota");

@@ -8,27 +8,21 @@ import org.example.utils.Node;
 
 public class DirectoryManager {
     public void init() {
-        List<Directory> subdirectories = new ArrayList<>();
-        List<Directory> subdirectories2 = new ArrayList<>();
-        List<String> archives;
-        List<String> archives2;
+        Directory mainDirectory = new Directory("Main Directory");
+        Directory subDirectory1 = new Directory("Illuminaty");
+        Directory subDirectory2 = new Directory("UFO");
 
-        archives = new ArrayList<>(List.of("3eye.doc", "shadowGovernment.doc", "EndOfTheWorld.exe"));
-        archives2 = new ArrayList<>(List.of("UFO08HJ97.PNG", "UFO43JH07.PNG", "X.exe"));
+        mainDirectory.addSubdirectory(subDirectory1);
+        mainDirectory.addSubdirectory(subDirectory2);
 
-        subdirectories.add(new Directory("Illuminaty", null, archives));
-        subdirectories2.add(new Directory("UFO", null, archives2));
-
-        Directory mainDirectory = new Directory("Main Directory", subdirectories, archives);
+        mainDirectory.addArchive("3eye.doc");
+        subDirectory1.addArchive("...___...");
+        subDirectory2.addArchive("shadowGovernment.doc");
 
 
-        Node<Directory> headNode = new Node<>(mainDirectory);
-        for (int i = 0; i < mainDirectory.getSubdirectory().size() ; i++) {
-            headNode.next = new Node<>(mainDirectory.getSubdirectory().get(i));
-            headNode.next.next = new Node<>(mainDirectory.getSubdirectory().get(i));
-        }
-
-
+        Node<String> mainNode;
+        mainNode = new Node<>(mainDirectory.getName());
+        mainNode.next = new Node<>(mainDirectory.getSubdirectory().toString());
 
         System.out.println("                                               \n" +
                 "                                  ,-----. ,--. \n" +
@@ -36,16 +30,15 @@ public class DirectoryManager {
                 "' ,-.  ||  .--'| .-. :' ,-.  |    '--. `\\`|  | \n" +
                 "\\ '-'  ||  |   \\   --.\\ '-'  |    .--'  / |  | \n" +
                 " `--`--'`--'    `----' `--`--'    `----'  `--'");
-        directoryBrowsing(headNode);
+        directoryBrowsing(mainNode);
     }
 
-    private void directoryBrowsing(Node<Directory> node) {
-        int count = 1;
+    private void directoryBrowsing(Node<?> node) {
         if (node == null) {
             return;
         }
-        System.out.println(node.data + " ");
-        directoryBrowsing(node.next);
+        System.out.println(node.getData() + " ");
+        directoryBrowsing(node.getNext());
     }
 }
 

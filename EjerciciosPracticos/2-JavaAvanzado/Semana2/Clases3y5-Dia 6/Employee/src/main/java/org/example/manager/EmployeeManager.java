@@ -55,6 +55,14 @@ public class EmployeeManager {
         System.out.println("Average Salary - managers -> " + averageSalaryManagers);
         System.out.println( );
 
+        // Agrupar por categoría y calcular salario promedio USO DE MAP
+        Map<String, Double> salarioPromedioPorCategoria = employees.stream()
+                .collect(Collectors.groupingBy(Employee::getCategory,
+                        Collectors.averagingDouble(Employee::getSalary)));
+        System.err.println("(Map) Average Salary by category: " + salarioPromedioPorCategoria);
+
+
+
         Optional<Employee> maxSalary = employees.stream()
                 .max(Comparator.comparingDouble(Employee::getSalary));
         maxSalary.ifPresent(employee -> System.out.println("The highest paid employee : " + employee));

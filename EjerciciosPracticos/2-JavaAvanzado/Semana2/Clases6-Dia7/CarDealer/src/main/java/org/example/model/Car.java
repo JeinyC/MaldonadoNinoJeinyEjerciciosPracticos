@@ -2,7 +2,7 @@ package org.example.model;
 
 public class Car {
 
-    private String brand;
+    private final String brand;
     private final String model;
     private final int year;
     private final double price;

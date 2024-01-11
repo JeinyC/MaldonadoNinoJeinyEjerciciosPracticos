@@ -6,8 +6,9 @@ import java.util.List;
 
 public class CarInventory <T extends Car> {
 
-    List<Car> cars = new ArrayList<>();
+    List<T> cars;
     public CarInventory() {
+        this.cars = new ArrayList<>();
     }
 
     public void addCar(T car){
@@ -15,35 +16,31 @@ public class CarInventory <T extends Car> {
         System.out.println("Car added : " + car);
     }
 
-    public <T extends Car> double calculateTotalPrice(List<T> cars) {
+    public double calculateTotalPrice() {
         double totalPrice = 0.0;
-        for (Car car : cars) {
+        for (T car : cars) {
             totalPrice += car.getPrice();
         }
         return totalPrice;
     }
 
-    public  <T> List<Car> searchByBrand(T key) {
-        List<Car> result = new ArrayList<>();
-        for (Car car : cars) {
-            if (car.getBrand().equals(key)) {
+    public List<T> searchByBrand(String brand) {
+        List<T> result = new ArrayList<>();
+        for (T car : cars) {
+            if (car.getBrand().equals(brand)) {
                 result.add(car);
             }
         }
         return result;
     }
 
-    public List<Car> searchByYear(int year) {
-        List<Car> result = new ArrayList<>();
-        for (Car car : cars) {
+    public List<T> searchByYear(int year) {
+        List<T> result = new ArrayList<>();
+        for (T car : cars) {
             if (car.getYear() == year) {
                 result.add(car);
             }
         }
         return result;
-    }
-
-    public List<Car> getCars() {
-        return cars;
     }
 }
