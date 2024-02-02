@@ -77,5 +77,5 @@ public class Event {
                 ", classroom='" + classroom + '\'' +
                 ", teacher='" + teacher + '\'' +
                 '}';
-    }cla
+    }
 }
