@@ -1,0 +1,230 @@
+body {
+    background-color: #993000;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+}
+h2{
+    color: #341D0B;
+}
+h4 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    color: #341D0B;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+/* ///// inputs /////*/
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.btn-lrg a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide {
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: white;
+    color: #341D0B;
+    border-radius: 4px;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+input[type="date"] {
+    width: 200px; /* Puedes ajustar el ancho según tus necesidades */
+    margin-top: 10px; /* Espacio superior para separar del borde superior */
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 65%;
+}
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.container-wrapper {
+    display: flex;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+.submit-btn {
+    border-color: #341D0B;
+    padding: 15px 30px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color:#D06725;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin: 0 1.5cm;
+    text-align: center;
+    text-decoration: none;
+    border: 5px;
+
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .btn-lrg {
+        margin: 10px 0;
+    }
+}
+
+input[type=checkbox] + label {
+    color: #ccc;
+    font-style: italic;
+}
+
+input[type=checkbox]:checked + label {
+    color: #f00;
+    font-style: normal;
+}
+
+.container {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #E7AE5F;
+    border-radius: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 5px solid #341D0B;
+}
+
+th {
+    background-color: #D06725;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #FFE8C4;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-lrg:hover {
+    transform: translateY(1px);
+}

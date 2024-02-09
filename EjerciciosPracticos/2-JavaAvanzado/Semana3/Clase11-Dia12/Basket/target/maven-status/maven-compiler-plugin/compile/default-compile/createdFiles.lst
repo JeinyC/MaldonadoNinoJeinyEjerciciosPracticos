@@ -1,0 +1,13 @@
+com\mycompany\basket\persistence\GameJpaController.class
+com\mycompany\basket\persistence\PersistenceController.class
+com\mycompany\basket\logic\Controller.class
+com\mycompany\basket\resources\JavaEE8Resource.class
+com\mycompany\basket\exceptions\IllegalOrphanException.class
+com\mycompany\basket\JAXRSConfiguration.class
+com\mycompany\basket\logic\Game.class
+com\mycompany\basket\servlets\SvTeam.class
+com\mycompany\basket\persistence\TeamJpaController.class
+com\mycompany\basket\exceptions\NonexistentEntityException.class
+com\mycompany\basket\servlets\SvGame.class
+com\mycompany\basket\logic\Team.class
+com\mycompany\basket\exceptions\PreexistingEntityException.class
