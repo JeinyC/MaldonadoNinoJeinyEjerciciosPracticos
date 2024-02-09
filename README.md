@@ -16,9 +16,9 @@
 - [Hilos/Threads](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/2-JavaAvanzado/Semana1/Clase2-Dia3)
 - [Streams y Optionals](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/2-JavaAvanzado/Semana2/Clases3y5-Dia%206)
 - [Generics y utils](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/2-JavaAvanzado/Semana2/Clases6-Dia7)
-- [Iteración y Recursividad]()
-- [Java Server Pages JSP + JPA](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/2-JavaAvanzado/Semana3/Clase10-Dia11)
-- [Relaciones entre clases JSP + JPA]()
+- [Iteración y Recursividad](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/2-JavaAvanzado/Semana2/Clases7-Dia8/DirectoryBrowsing)
+- [Java Server Pages JSP + JPA](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/2-JavaAvanzado/Semana3/Clase10-Dia11/Vote)
+- [Relaciones entre clases JSP + JPA](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/2-JavaAvanzado/Semana3/Clase11-Dia12/Basket)
 ## Spring Boot
 - [Spring Framework](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/4-SpringBoot/Semana1/Clase1-Dia2)
 - [Patrón MVC](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/4-SpringBoot/Semana1/Clase2-Dia3)
@@ -27,5 +27,4 @@
 - [Arquitectura Multicapas](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/4-SpringBoot/Semana2/Clase5-Dia6/University)
 - [Patrón DTO](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/4-SpringBoot/Semana2/Clase6-Dia7/barLuna)
 - [Inversión de Control e Inyección de dependencias + Hibernate](https://github.com/JeinyC/MaldonadoNinoJeinyEjerciciosPracticos/tree/master/EjerciciosPracticos/4-SpringBoot/Semana2/Clase7-Dia8/Cats)
-- []()
-- []()
+
