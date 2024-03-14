@@ -5,9 +5,9 @@ import java.util.List;
 
 public interface ICatService {
 
-    public List<Cat> getCat();
-    public List<Cat> getCatsByOrder();
-    public void saveCat (Cat cat);
-    public void deleteCat (Long id);
-    public Cat findCat (Long id);
+    List<Cat> getCat();
+    List<Cat> getCatsByOrder();
+    void saveCat(Cat cat);
+    void deleteCat(Long id);
+    Cat findCat(Long id);
 }
